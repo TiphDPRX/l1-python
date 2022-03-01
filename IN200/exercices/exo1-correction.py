@@ -38,10 +38,12 @@ def restart():
 racine = tk.Tk()
 canvas = tk.Canvas(racine, bg="black", width=500, height=500)
 bouton = tk.Button(racine, text="Recommencer", command=restart)
+label = tk.Label(racine, text = "J'ai enfin réussi, bravo à moi !!!")
 
 #positionnement des widgets
 canvas.grid()
 bouton.grid()
+label.grid()
 
 #dessin d'un rectangle rouge
 rectangle = canvas.create_rectangle((x1, y1), (x2, y2), fill="red")
